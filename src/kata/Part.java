@@ -69,13 +69,9 @@ public class Part {
 	
 	private boolean partWinner() {
 		if(player2.getScoreInPart() >= 4 && player2.getScoreInPart() >= player1.getScoreInPart() + 2 ){
-			player1.setScoreInPart(0);
-			player2.setScoreInPart(0);
 			return true;
 		}
 		if(player1.getScoreInPart() >= 4 && player1.getScoreInPart() >= player2.getScoreInPart() + 2){
-			player1.setScoreInPart(0);
-			player2.setScoreInPart(0);
 			return true;
 		}
 		return false;
